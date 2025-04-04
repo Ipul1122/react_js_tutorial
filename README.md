@@ -87,12 +87,14 @@ TailwindCSS adalah framework CSS berbasis utility-first yang memudahkan styling 
 4.1 Instalasi TailwindCSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+
 4.2 Konfigurasi Tailwind di tailwind.config.js
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: { extend: {} },
   plugins: [],
 }; 
+
 4.3 Contoh Penggunaan TailwindCSS di Komponen
 function Button() {
   return (
