@@ -5,12 +5,17 @@ Dokumentasi Pembelajaran React.js
 1. Pengenalan React.js
 React.js adalah library JavaScript yang digunakan untuk membangun antarmuka pengguna (UI) yang dinamis dan interaktif. React bersifat declarative, component-based, dan menggunakan Virtual DOM untuk meningkatkan performa rendering.
 Konsep Utama React:
+
 1.1 Component: Blok penyusun UI yang dapat digunakan kembali.
+
 1.2 Props (Properties): Data yang dikirim dari parent component ke child component.
+
 1.3 State: Data internal dalam komponen yang dapat berubah seiring waktu.
+
 1.4 Hooks: Fungsi khusus di React untuk menggunakan state dan fitur React lainnya tanpa membuat class.
-===========================================================================================
-2. State dan Lifecycle dengan useState & useEffect
+
+==========================================================================
+3. State dan Lifecycle dengan useState & useEffect
 
 2.1 useState
 Digunakan untuk mengelola state di dalam komponen fungsional.
