@@ -3,25 +3,21 @@ PROJECT BELAJAR REACT JS SEDERHANA
 Dokumentasi Pembelajaran React.js
 
 1. Pengenalan React.js
-
 React.js adalah library JavaScript yang digunakan untuk membangun antarmuka pengguna (UI) yang dinamis dan interaktif. React bersifat declarative, component-based, dan menggunakan Virtual DOM untuk meningkatkan performa rendering.
-
 Konsep Utama React:
-
 1.1 Component: Blok penyusun UI yang dapat digunakan kembali.
 1.2 Props (Properties): Data yang dikirim dari parent component ke child component.
 1.3 State: Data internal dalam komponen yang dapat berubah seiring waktu.
 1.4 Hooks: Fungsi khusus di React untuk menggunakan state dan fitur React lainnya tanpa membuat class.
-=====================================================================================================
+===========================================================================================
 2. State dan Lifecycle dengan useState & useEffect
 
 2.1 useState
-
 Digunakan untuk mengelola state di dalam komponen fungsional.
 
 Contoh Penggunaan useState:
 
-<!-- import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -32,7 +28,7 @@ function Counter() {
       <button onClick={() => setCount(count + 1)}>Tambah</button>
     </div>
   );
-} -->
+} 
 
 2.2 useEffect
 
@@ -55,7 +51,7 @@ function Timer() {
 
   return <p>Waktu: {time} detik</p>;
 } -->
-=====================================================================================================
+============================================================================
 3. Manajemen Navigasi dengan React Router
 
 React Router digunakan untuk mengelola navigasi dalam aplikasi React.
@@ -79,7 +75,7 @@ function App() {
     </Router>
   );
 } -->
-===============================================================================
+======================================================================
 4. Styling di React: TailwindCSS
 
 TailwindCSS adalah framework CSS berbasis utility-first yang memudahkan styling komponen.
@@ -100,7 +96,7 @@ npx tailwindcss init -p
     </button>
   );
 } -->
-===============================================================================
+======================================================================
 5. Membuat Navbar yang Responsif dengan TailwindCSS
 Navbar harus dapat menyesuaikan tampilan untuk desktop, tablet, dan mobile.
 
