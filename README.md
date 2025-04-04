@@ -15,7 +15,7 @@ Konsep Utama React:
 1.4 Hooks: Fungsi khusus di React untuk menggunakan state dan fitur React lainnya tanpa membuat class.
 
 ==========================================================================
-3. State dan Lifecycle dengan useState & useEffect
+2. State dan Lifecycle dengan useState & useEffect
 
 2.1 useState
 Digunakan untuk mengelola state di dalam komponen fungsional.
@@ -41,7 +41,7 @@ Digunakan untuk menjalankan efek samping seperti mengambil data, berinteraksi de
 
 Contoh Penggunaan useEffect:
 
-<!-- import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Timer() {
   const [time, setTime] = useState(0);
@@ -55,7 +55,7 @@ function Timer() {
   }, [time]);
 
   return <p>Waktu: {time} detik</p>;
-} -->
+}
 ============================================================================
 3. Manajemen Navigasi dengan React Router
 
@@ -63,7 +63,7 @@ React Router digunakan untuk mengelola navigasi dalam aplikasi React.
 3.1 Instal React Router
 npm install react-router-dom
 3.2 Gunakan BrowserRouter, Routes, dan Route dalam App.jsx
-<!-- import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -79,7 +79,7 @@ function App() {
       </Routes>
     </Router>
   );
-} -->
+} 
 ======================================================================
 4. Styling di React: TailwindCSS
 
@@ -88,19 +88,19 @@ TailwindCSS adalah framework CSS berbasis utility-first yang memudahkan styling 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 4.2 Konfigurasi Tailwind di tailwind.config.js
-<!-- export default {
+export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: { extend: {} },
   plugins: [],
-}; -->
+}; 
 4.3 Contoh Penggunaan TailwindCSS di Komponen
-<!-- function Button() {
+function Button() {
   return (
     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
       Klik Saya
     </button>
   );
-} -->
+}
 ======================================================================
 5. Membuat Navbar yang Responsif dengan TailwindCSS
 Navbar harus dapat menyesuaikan tampilan untuk desktop, tablet, dan mobile.
@@ -108,7 +108,7 @@ Navbar harus dapat menyesuaikan tampilan untuk desktop, tablet, dan mobile.
 Struktur File Navbar
 
 📂 src/components/Navbar.jsx
-<!-- import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
@@ -145,6 +145,6 @@ function Navbar() {
   );
 }
 
-export default Navbar; -->
+export default Navbar;
 
 
