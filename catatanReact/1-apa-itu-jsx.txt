@@ -1,0 +1,27 @@
+Apa itu JSX?
+JSX ( JAVASCRIPT XML ) adalah cara menulis kode HTML dalam Javascript. 
+React menggunakan JSX untuk membuat tampilan UI lebih mudah dan lebih intuitif
+Contoh JSX dalam react: 
+function App(){
+    return (
+        <div>
+        <h1>Ini Judul</h1>
+        <p>Ini Paragraf</p>
+        </div>
+    );
+}
+
+Alasan mengapa pakai JSX
+👍Mudah digunakan dan dibaca
+👍Lebih aman ( React mencegah serangan XSS)
+👍 Lebih cepat ( React mengonversi JSX menjadi Javascript murni)
+
+JSX Bukan HTML!
+-  Dalam JSX, harus ada satu elemen pembungkus utama (bisa <div> atau <> fragment)
+-  Gunakan {} "bracket" untuk menyisipak Javascript dalam JSX
+
+const name = "John Doe";
+function App() {
+  return <h1>Halo, {name}!</h1>;
+}
+

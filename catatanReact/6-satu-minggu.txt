@@ -1,0 +1,6 @@
+✅ Dasar ReactJs : Instalasi, Struktu projek, JSX, Komponen, props dan state
+✅ Event Handling & Conditional Rendering : Menangani event special seperti onClick, menampilkan elemen berdasarkan kondisi tertentu
+✅ React Hooks ( useState, useEffect) : mengelola state dan efek samping dalam komponen
+✅ Fetch API & Axios: Mengambil data dari API eksternal
+✅ React Router : Navigasi antar halaman di react
+✅ Mini Project : To-Do-List : Implementasi CRUD sederhana dengan penyimpanan di localStorage

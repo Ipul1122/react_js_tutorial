@@ -1,0 +1,35 @@
+Component (Functional Components)
+
+Apa itu Components?
+
+Komponen adalah bagian kecil dari UI yang bisa digunakan kembali. Ada 2 Jenis komponen
+1. Functional Components (Paling sering digunakan)
+2. Class Components (Jarang digunakan, karena React Hook lebih baik)
+
+Contoh Functional Component:
+Buat file baru di dalam folder src/components/, misalnya Hello.jsx:
+
+function Hello(){
+    return <h1>Halo dari Ipul</h1>;
+}
+
+export default Hello;
+=============================
+Kemudian panggil komponen tersebut di App.jsx
+
+import Hello from "./components/Hello"
+
+function App(){
+    return (
+        <div>
+        <Hello/>
+        </div>
+    );
+}
+
+export default App
+================================
+Keuntungan Components
+1. Dapat digunakan kembali
+2. Mudah dibaca dan dikelola
+3. Memisahkan kode menjadi bagian kecil yang lebih rapi

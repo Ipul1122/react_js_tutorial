@@ -1,0 +1,72 @@
+Props dan state
+
+- Props (Propertis)
+Props digunakan untuk mengirim data dari satu komponen ke komponen lain
+
+Cara memakai Props
+Buat file src/components/Greeting.jsx:
+
+function Greeting(props) {
+  return <h1>Halo, {props.name}!</h1>;
+}
+
+export default Greeting;
+======================================
+
+Lalu panggil di App.jsx dan kirim props
+
+import Greeting from "./components/Greeting";
+
+function App(){
+    return (
+        <div>
+        <Greeting name="John" />
+        <Greeting name="Doe" />
+        </div>
+    );
+}
+
+export default App;
+=======================================
+Props Bersifat Read-Only
+1. Props tidak bisa diubah dalam komponen yang menerimanya
+2. Jika butuh perubahan data, gunakan state
+======================================
+
+2. State (Menyimpan data dalam komponen)
+state digunakan untuk Menyimpan dan mengubah data dalam komponen.
+Berbeda dengan props, state bisa berubah.
+
+Cara memakai state:
+
+Buat file src/components/Counter.jsx:
+import { useState } from "react";
+
+function Counter(){
+    const [count, setCount]  = useState(0);
+
+    return (
+        <div>
+        <h2>Counter: {count}</h2>
+        <button onClick={() => setCount(count + 1)}> Tambah </button>
+        <button onClick={() => setCount(count - 1)}> Kurang </button>
+        </div>
+    );
+}
+
+export default Counter;
+=======================================
+Kemudian panggil Counter di App.jsx:
+
+import Counter from "./components/Counter";
+
+function App(){
+    return (
+        <div>
+            <counter />
+        </div>
+    );
+}
+
+export default App;
+=========================================

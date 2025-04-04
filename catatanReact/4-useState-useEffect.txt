@@ -1,0 +1,5 @@
+useState: Untuk menyimpan dan memperbarui data dalam komponen
+useEffect: untuk menjalankan efek samping (side effect) dalam komponen,
+seperti mengambil data dati API, mengupdate judul halaman, atau
+menjalankan kode saat komponen dipasang.
+
