@@ -42,18 +42,14 @@ Digunakan untuk menjalankan efek samping seperti mengambil data, berinteraksi de
 Contoh Penggunaan useEffect:
 
 import React, { useState, useEffect } from 'react';
-
 function Timer() {
   const [time, setTime] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(time + 1);
     }, 1000);
-
     return () => clearInterval(interval);
   }, [time]);
-
   return <p>Waktu: {time} detik</p>;
 }
 ============================================================================
